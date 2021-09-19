@@ -1,0 +1,18 @@
+package com.steriotype.annotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DriverProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	ApplicationContext co = new ClassPathXmlApplicationContext("com/steriotype/annotation/config.xml");
+	Student student=co.getBean("stu",Student.class);
+	System.out.println(student);
+	System.out.println(student.getPlaces());
+	System.out.println(student.getPlaces().getClass().getName());
+
+	}
+
+}

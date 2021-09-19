@@ -1,0 +1,5 @@
+package com.steriotype.annotation;
+
+public class Student {
+
+}

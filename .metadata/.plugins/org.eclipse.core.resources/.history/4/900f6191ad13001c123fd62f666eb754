@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+	<%@page isELIgnored="false" %>
+	<%@include file="base.jsp" %>
+	<c:forEach  items="${listOfProducts}" var="s">
+	
+	<h1>${s }</h1>
+	</c:forEach>
+
+<html>
+<body>
+<h2>Hello World!</h2>
+</body>
+
+<h1>this is my views index file</h1>
+</html>

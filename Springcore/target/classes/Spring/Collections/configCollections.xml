@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">   
+ <!--This is our bean or the metadata for our class  --> 
+   
+   <!--  <bean class="com.springCore.student" name="Student1">
+   <property name="StudentId">
+   <value>8081</value>
+   </property>
+   <property name="StudentName">
+   <value>Parvaiz Sajad</value>
+   </property>
+   <property name="StudentAddress">
+   <value>Bohripora</value>
+   </property>
+   </bean> -->
+   <bean name="Emp" class="Spring.Collections.Emp">
+   <property name="id" value="123"/>
+ <property name="name" value="Parvaiz"/>
+<property name="phoneNumbers">
+<list>
+<value>12345</value>
+<value>1222345</value>
+<value>123433335</value>
+</list>
+</property>
+<property name="addresses">
+<set>
+<value>sopore</value>
+<value>jammu</value>
+<value>kashmir</value>
+</set>
+</property>
+<property name="empDetails">
+<map>
+<entry key="12" value="developer"></entry>
+<entry key="13" value="tester"></entry>
+<entry key="14" value="manager"></entry>
+</map>
+</property>
+<property name="location">
+<props>
+<prop key="sopore">Bohripora</prop>
+</props>
+</property>
+   </bean>
+   </beans> 

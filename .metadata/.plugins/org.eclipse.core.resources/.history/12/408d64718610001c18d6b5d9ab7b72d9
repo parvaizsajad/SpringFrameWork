@@ -1,0 +1,9 @@
+package com.spring.jdbcDao;
+
+public class Snippet {
+	public Student getStudent(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+

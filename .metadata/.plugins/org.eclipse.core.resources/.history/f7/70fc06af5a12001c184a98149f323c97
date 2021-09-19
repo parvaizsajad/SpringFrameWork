@@ -1,0 +1,20 @@
+package com.springMvc.search;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class ImageController {
+	@RequestMapping("/upload")
+	public String ImageUpload() {
+		
+		return"fileForm";
+	}
+	
+	@RequestMapping(path = "/handleImage",method = RequestMethod.POST)
+ public String handleImage() {
+	 System.out.println("here we will handle images");
+	 return"";
+ }
+}

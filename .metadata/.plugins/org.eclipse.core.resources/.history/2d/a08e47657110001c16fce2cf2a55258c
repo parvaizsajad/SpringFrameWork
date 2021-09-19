@@ -1,0 +1,12 @@
+package com.spring.jdbcDao;
+
+import com.spring.jdbcEntities.Student;
+
+public class StudentDaoImpl implements StudentDao {
+
+	public int insert(Student student) {
+	
+		return 0;
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.spring.javaconfig;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DriverProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ApplicationContext ac= new ClassPathXmlApplicationContext("com/spring/javaconfig/Config.xml");
+Student st =ac.getBean("student1",Student.class);
+System.out.println(st);
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.spring.service;
+
+import com.spring.Dao.UserDao;
+import com.spring.mvc.model.User;
+
+public class UserService {
+	private UserDao userDao;
+	public int createUser(User user) {
+		int s = userDao.saveUser(user);
+		
+		return s;
+		
+	}
+
+}

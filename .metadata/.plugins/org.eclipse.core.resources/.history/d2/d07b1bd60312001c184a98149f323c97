@@ -1,0 +1,20 @@
+package com.spring.mvc.HomeController;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ReController {
+	
+	@RequestMapping("/one")
+	public String One() {
+		System.out.println("this is controller one");
+		return"";
+	}
+@RequestMapping("/two")
+	public String Two() {
+		System.out.println("this is controller two");
+		return"";
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.curd.Entities;
+
+public class Product {
+
+}
