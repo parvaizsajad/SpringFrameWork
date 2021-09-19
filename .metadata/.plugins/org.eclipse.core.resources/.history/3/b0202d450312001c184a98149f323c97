@@ -1,8 +1,0 @@
-package com.spring.mvc.HomeController;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class ReController {
-
-}

@@ -1,7 +1,0 @@
-package com.spring.jdbcDao;
-
-import org.springframework.jdbc.core.RowMapper;
-
-public class rowMapperImpul implements RowMapper<T> {
-
-}

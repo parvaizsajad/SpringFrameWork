@@ -1,5 +1,0 @@
-package com.spring.standalone;
-
-public enum Person {
-
-}

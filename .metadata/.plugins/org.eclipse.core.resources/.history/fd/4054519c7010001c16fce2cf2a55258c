@@ -1,5 +1,0 @@
-package com.spring.jdbcDao;
-
-public interface StudentDao {
-
-}
