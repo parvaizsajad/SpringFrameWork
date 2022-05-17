@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+   <bean id = "helloWorld" class = "com.core.SpringCore.HelloWorld">
+     <!--  <property name = "message" value = " Parvaiz Sajad" />  -->
+      <constructor-arg value=" Parvaiz Sajad"></constructor-arg>
+      
+   </bean>
+ 
+   <bean id="Sim" class="com.seleniumExpress.ioc.Airtel"></bean>
+   
+   <bean id="Student" class="com.core.Student.Student">
+   <property name="rollNo" value="2"></property>
+   <property name="name" value="sajad"></property>
+   <property name="marks" ref="marks"></property>
+   </bean>
+
+<bean id="marks" class="com.core.Student.Marks" >
+<property name="sub1" value="10"></property>
+<property name="sub2" value="5"></property>
+
+</bean>
+<bean id="cheat" class="com.StudentCheating.Cheating"></bean>
+<bean id="StudentCheat" class="com.StudentCheating.Student">
+<property name="cheating" ref="cheat"></property>
+</bean>
+
+<bean id="sim" class="com.spring.Network.Jio"> 
+
+</bean>
+
+</beans>
